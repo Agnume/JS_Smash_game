@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Smash game</title>
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+    </head>
+    <body>
+
+        <div class="current-score" id="currentScore">
+            
+        </div>
+    
+        <div class="deadline"></div>
+        <div class="level" id="levelUp"></div>
+    
+        <div class="container">
+            <div class="box" id="minion1" onclick="smashMinion('minion1')">
+                <div class="eye-1" >
+                    <div class="eye-ball-1"></div>
+                </div>
+                <div class="eye-2">
+                    <div class="eye-ball-2"></div>
+                </div>
+                <div class="nose-round">
+                    <div class="nose"></div>
+                    <div class="mouth"></div>
+                </div>
+                <div class="ear1">
+                    <div class="ear1-inside"></div>
+                </div>
+                <div class="ear2">
+                    <div class="ear2-inside"></div>
+                </div>
+            </div>
+            <div class="box" id="minion2" onclick="smashMinion('minion2')">
+                <div class="eye-1">
+                    <div class="eye-ball-1"></div>
+                </div>
+                <div class="eye-2">
+                    <div class="eye-ball-2"></div>
+                </div>
+                <div class="nose-round">
+                    <div class="nose"></div>
+                    <div class="mouth"></div>
+                </div>
+                <div class="ear1">
+                    <div class="ear1-inside"></div>
+                </div>
+                <div class="ear2">
+                    <div class="ear2-inside"></div>
+                </div>
+            </div>
+            <div class="box" id="minion3" onclick="smashMinion('minion3')">
+                <div class="eye-1">
+                    <div class="eye-ball-1"></div>
+                </div>
+                <div class="eye-2">
+                    <div class="eye-ball-2"></div>
+                </div>
+                <div class="nose-round">
+                    <div class="nose"></div>
+                    <div class="mouth"></div>
+                </div>
+                <div class="ear1">
+                    <div class="ear1-inside"></div>
+                </div>
+                <div class="ear2">
+                    <div class="ear2-inside"></div>
+                </div>
+            </div>
+            <div class="box" id="minion4" onclick="smashMinion('minion4')">
+                <div class="eye-1">
+                    <div class="eye-ball-1"></div>
+                </div>
+                <div class="eye-2">
+                    <div class="eye-ball-2"></div>
+                </div>
+                <div class="nose-round">
+                    <div class="nose"></div>
+                    <div class="mouth"></div>
+                </div>
+                <div class="ear1">
+                    <div class="ear1-inside"></div>
+                </div>
+                <div class="ear2">
+                    <div class="ear2-inside"></div>
+                </div>
+            </div>
+            <div class="box" id="minion5" onclick="smashMinion('minion5')">
+                <div class="eye-1">
+                    <div class="eye-ball-1"></div>
+                </div>
+                <div class="eye-2">
+                    <div class="eye-ball-2"></div>
+                </div>
+                <div class="nose-round">
+                    <div class="nose"></div>
+                    <div class="mouth"></div>
+                </div>
+                <div class="ear1">
+                    <div class="ear1-inside"></div>
+                </div>
+                <div class="ear2">
+                    <div class="ear2-inside"></div>
+                </div>
+            </div> 
+            <div class="box" id="minion6" onclick="smashMinion('minion6')">
+                <div class="eye-1">
+                    <div class="eye-ball-1"></div>
+                </div>
+                <div class="eye-2">
+                    <div class="eye-ball-2"></div>
+                </div>
+                <div class="nose-round">
+                    <div class="nose"></div>
+                    <div class="mouth"></div>
+                </div>
+                <div class="ear1">
+                    <div class="ear1-inside"></div>
+                </div>
+                <div class="ear2">
+                    <div class="ear2-inside"></div>
+                </div>
+            </div> 
+        </div>
+        <div class="overflow" id="gameHover">
+            <div class="start-game" id="startBlock">
+                <h2>New game</h2>
+                <input type="number" name="mousenumber" value="">
+                <button type="button" name="button" onclick="startGame()">Start</button>
+            </div>
+    
+            <div class="good-game" id="gameoverBlock">
+                <h1>Game over</h1>
+                <h2>Score: <span id="result"></span></h2>
+                <button type="button" name="button" onclick="restartGame()">Restart</button>
+            </div>
+        </div>
+    </body>
+        <script type="text/javascript" src="./js/script.js"></script>
+</html>
